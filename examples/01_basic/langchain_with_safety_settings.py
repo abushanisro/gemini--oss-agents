@@ -48,10 +48,10 @@ def example_with_moderate_safety():
         response = llm.invoke(prompt)
         print(f"\nResponse:\n{response.content}")
 
-        print("\n✓ Success with moderate safety settings")
+        print("\n Success with moderate safety settings")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_with_strict_safety():
@@ -76,10 +76,10 @@ def example_with_strict_safety():
         response = llm.invoke(prompt)
         print(f"\nResponse:\n{response.content}")
 
-        print("\n✓ Success with strict safety settings (ideal for children's content)")
+        print("\n Success with strict safety settings (ideal for children's content)")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_with_custom_safety():
@@ -111,10 +111,10 @@ def example_with_custom_safety():
         response = llm.invoke(prompt)
         print(f"\nResponse:\n{response.content}")
 
-        print("\n✓ Success with custom safety configuration")
+        print("\n Success with custom safety configuration")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_with_error_handling():
@@ -142,14 +142,14 @@ def example_with_error_handling():
         )
 
         if error:
-            print(f"\n⚠ Error occurred: {error}")
+            print(f"\n Error occurred: {error}")
             print(f"Fallback response: {response}")
         else:
             print(f"\nResponse:\n{response.content}")
-            print("\n✓ Success with error handling")
+            print("\n Success with error handling")
 
     except Exception as e:
-        print(f"\n✗ Unexpected error: {e}")
+        print(f"\n Unexpected error: {e}")
 
 
 def main():
@@ -162,7 +162,7 @@ def main():
 
     # Check for API key
     if not os.getenv("GOOGLE_API_KEY"):
-        print("\n✗ Error: GOOGLE_API_KEY not found in environment variables")
+        print("\n Error: GOOGLE_API_KEY not found in environment variables")
         print("Please create a .env file with your API key:")
         print("  GOOGLE_API_KEY=your_api_key_here")
         return

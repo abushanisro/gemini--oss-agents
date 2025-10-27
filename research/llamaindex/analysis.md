@@ -9,7 +9,7 @@
 - **Analyzer**: Gemini OSS Agent Integration Project
 
 ## Important Status Notice
-⚠️ **CRITICAL**: Documentation states "Gemini has largely been replaced by Google GenAI" - suggesting a migration or consolidation may be in progress. Users are directed to Google GenAI page for latest examples.
+ **CRITICAL**: Documentation states "Gemini has largely been replaced by Google GenAI" - suggesting a migration or consolidation may be in progress. Users are directed to Google GenAI page for latest examples.
 
 ## Current Integration Status
 
@@ -73,7 +73,7 @@
 #### Advanced Features
 - [ ] Context caching (not documented)
 - [ ] Code execution (not documented)
-- [x] Grounding with Google Search (✅ Built-in tool!)
+- [x] Grounding with Google Search ( Built-in tool!)
 - [?] JSON mode (Pydantic structured output)
 - [?] Token counting (not documented)
 - [x] Embeddings (GeminiEmbedding class)

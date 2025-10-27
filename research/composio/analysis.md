@@ -28,7 +28,7 @@ Composio is a **tool integration platform** (not an LLM framework) that equips A
 ### 2. Core Gemini Features Support
 
 #### Integration Approach
-⚠️ **Important Note**: Composio is a **tool layer** on top of Gemini, not a direct LLM integration. It enhances Gemini's function calling capabilities by providing pre-built tool integrations.
+ **Important Note**: Composio is a **tool layer** on top of Gemini, not a direct LLM integration. It enhances Gemini's function calling capabilities by providing pre-built tool integrations.
 
 #### Text Generation
 - [x] Uses native Gemini API (via google-genai)
@@ -47,7 +47,7 @@ Composio is a **tool integration platform** (not an LLM framework) that equips A
 - **Notes**: Composio focuses on function calling/tools, not multimodal inputs
 
 #### Function Calling
-- [x] Basic function calling (Core feature! ✅)
+- [x] Basic function calling (Core feature! )
 - [x] Multiple function definitions (200+ tools available)
 - [x] Parallel function calls (via Gemini native support)
 - [x] Function call validation

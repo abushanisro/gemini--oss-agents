@@ -38,7 +38,7 @@
 - **Notes**: Excellent multimodal support including image generation with response_modalities parameter
 
 #### Function Calling
-- [x] Basic function calling (Tool calling ✅)
+- [x] Basic function calling (Tool calling )
 - [x] Multiple function definitions
 - [?] Parallel function calls (needs verification)
 - [x] Function call validation
@@ -47,7 +47,7 @@
 - **Notes**: Tool calling is marked as supported in documentation
 
 #### Streaming
-- [x] Streaming text responses (Token-level streaming ✅)
+- [x] Streaming text responses (Token-level streaming )
 - [?] Streaming with function calls (needs verification)
 - [x] Token-by-token streaming
 - [x] Error handling during streaming
@@ -71,15 +71,15 @@
 - [?] Context caching (needs investigation)
 - [?] Code execution (needs investigation)
 - [?] Grounding with Google Search (needs investigation)
-- [x] JSON mode (✅)
-- [x] Token counting (Token usage tracking ✅)
-- [x] Embeddings (GoogleGenerativeAIEmbeddings ✅)
+- [x] JSON mode ()
+- [x] Token counting (Token usage tracking )
+- [x] Embeddings (GoogleGenerativeAIEmbeddings )
 - [?] Fine-tuned model support (needs verification)
 - **Status**: Partially Supported
 - **Notes**: JSON mode, structured output, embeddings well supported. Advanced features need investigation
 
 **Known Limitations**:
-- ❌ Logprobs NOT supported
+-  Logprobs NOT supported
 
 ### 3. Tool-Specific Integration
 
@@ -87,7 +87,7 @@
 - [x] Agent creation with Gemini
 - [x] Multi-agent coordination (via LangGraph)
 - [x] Memory management
-- [x] Tool/Action integration (Structured output ✅)
+- [x] Tool/Action integration (Structured output )
 - [x] Callbacks and monitoring (LangSmith integration)
 - **Status**: Fully Supported
 - **Notes**: LangChain has excellent agent support with LangGraph for complex workflows
@@ -98,7 +98,7 @@
 - [x] Well-structured code
 - [x] Type hints/annotations
 - [x] Error handling (ChatGoogleGenerativeAIError)
-- [x] Async support (Native async ✅)
+- [x] Async support (Native async )
 - [x] Rate limiting (timeout and max_retries parameters)
 - **Rating**: 5/5
 - **Notes**: High-quality implementation with proper error handling and async support

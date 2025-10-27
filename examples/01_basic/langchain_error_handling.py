@@ -56,11 +56,11 @@ def example_basic_retry():
         response = generate_with_retry(prompt)
         print(f"\nResponse:\n{response.content}")
 
-        print("\n✓ Success with retry logic")
+        print("\n Success with retry logic")
         print("Note: If the API fails, it will automatically retry up to 3 times")
 
     except Exception as e:
-        print(f"\n✗ Error after all retries: {e}")
+        print(f"\n Error after all retries: {e}")
 
 
 def example_safe_generation():
@@ -87,14 +87,14 @@ def example_safe_generation():
         )
 
         if error:
-            print(f"\n⚠ An error occurred: {error}")
+            print(f"\n An error occurred: {error}")
             print(f"Using fallback response: {response}")
         else:
             print(f"\nResponse:\n{response.content}")
-            print("\n✓ Success")
+            print("\n Success")
 
     except Exception as e:
-        print(f"\n✗ Unexpected error: {e}")
+        print(f"\n Unexpected error: {e}")
 
 
 def example_circuit_breaker():
@@ -134,15 +134,15 @@ def example_circuit_breaker():
                 print(f"\n{i}. Prompt: {prompt}")
                 response = generate_with_breaker(prompt)
                 print(f"   Response: {response.content[:100]}...")
-                print("   ✓ Success")
+                print("    Success")
             except Exception as e:
-                print(f"   ✗ Failed: {e}")
+                print(f"    Failed: {e}")
 
-        print("\n✓ Circuit breaker prevents cascading failures")
+        print("\n Circuit breaker prevents cascading failures")
         print("Note: After 3 failures, circuit opens for 30 seconds")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_comprehensive_error_handling():
@@ -181,11 +181,11 @@ def example_comprehensive_error_handling():
         )
 
         if error:
-            print(f"\n⚠ Error: {error}")
+            print(f"\n Error: {error}")
             print(f"Fallback: {response}")
         else:
             print(f"\nResponse:\n{response.content}")
-            print("\n✓ Success with comprehensive error handling")
+            print("\n Success with comprehensive error handling")
 
         print("\nError handling layers:")
         print("1. Built-in timeout (30s) and retries (2)")
@@ -194,7 +194,7 @@ def example_comprehensive_error_handling():
         print("4. Safe generation with fallback")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_handling_safety_blocks():
@@ -222,14 +222,14 @@ def example_handling_safety_blocks():
         is_blocked, reason = GeminiErrorHandler.handle_safety_block(response)
 
         if is_blocked:
-            print(f"\n⚠ Content was blocked: {reason}")
+            print(f"\n Content was blocked: {reason}")
             print("Consider adjusting safety settings or rephrasing prompt.")
         else:
             print(f"\nResponse: {response.text[:200]}...")
-            print("\n✓ Content passed safety filters")
+            print("\n Content passed safety filters")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def main():
@@ -242,7 +242,7 @@ def main():
 
     # Check for API key
     if not os.getenv("GOOGLE_API_KEY"):
-        print("\n✗ Error: GOOGLE_API_KEY not found in environment variables")
+        print("\n Error: GOOGLE_API_KEY not found in environment variables")
         print("Please create a .env file with your API key:")
         print("  GOOGLE_API_KEY=your_api_key_here")
         return

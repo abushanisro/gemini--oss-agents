@@ -9,7 +9,7 @@ All major OSS agent/workflow tools now have Gemini integration support, with var
 ## Tool Overview
 
 ### 1. LangChain
-**Status**: ✅ Mature Integration
+**Status**:  Mature Integration
 **Package**: `langchain-google-genai` v2.1.12
 **Key Strengths**:
 - Official Google collaboration
@@ -36,7 +36,7 @@ All major OSS agent/workflow tools now have Gemini integration support, with var
 ---
 
 ### 2. LlamaIndex
-**Status**: ⚠️ Transitioning
+**Status**:  Transitioning
 **Package**: `llama-index-llms-gemini` v0.6.1 (Sep 2025)
 **Key Strengths**:
 - Multi-modal support for image understanding
@@ -64,7 +64,7 @@ All major OSS agent/workflow tools now have Gemini integration support, with var
 ---
 
 ### 3. CrewAI
-**Status**: ✅ Active Support
+**Status**:  Active Support
 **Package**: Part of core CrewAI
 **Key Strengths**:
 - Official Google documentation/examples
@@ -92,7 +92,7 @@ All major OSS agent/workflow tools now have Gemini integration support, with var
 ---
 
 ### 4. Composio
-**Status**: ✅ Active Integration
+**Status**:  Active Integration
 **Package**: `composio-gemini` on PyPI
 **Key Strengths**:
 - 100+ tool integrations

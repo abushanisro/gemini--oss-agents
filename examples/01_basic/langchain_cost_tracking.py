@@ -74,7 +74,7 @@ def example_basic_cost_tracking():
         tracker.print_summary()
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_cost_comparison():
@@ -120,11 +120,11 @@ def example_cost_comparison():
             except Exception as e:
                 print(f"{model_name}: Error - {e}\n")
 
-        print("💡 Tip: Use Flash models for cost-effective general tasks")
+        print(" Tip: Use Flash models for cost-effective general tasks")
         print("         Use Pro models for complex reasoning tasks")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_cost_estimation():
@@ -189,10 +189,10 @@ def example_cost_estimation():
             )
             print(f"  {description}: ${usage.cost_estimate:.6f}")
 
-        print("\n💡 Use this technique to estimate costs before expensive operations")
+        print("\n Use this technique to estimate costs before expensive operations")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_batch_processing_with_tracking():
@@ -226,7 +226,7 @@ def example_batch_processing_with_tracking():
         for i, prompt in enumerate(prompts, 1):
             response = model.generate_content(prompt)
             tracker.add_from_response(response, model="gemini-2.0-flash-exp")
-            print(f"{i}. ✓ Processed: {prompt[:50]}...")
+            print(f"{i}.  Processed: {prompt[:50]}...")
 
         print("\n" + "-"*60)
         tracker.print_summary()
@@ -234,10 +234,10 @@ def example_batch_processing_with_tracking():
         # Export to JSON
         output_file = "/tmp/gemini_usage_report.json"
         tracker.export_to_json(output_file)
-        print(f"📊 Detailed report exported to: {output_file}")
+        print(f" Detailed report exported to: {output_file}")
 
     except Exception as e:
-        print(f"\n✗ Error: {e}")
+        print(f"\n Error: {e}")
 
 
 def example_cost_optimization():
@@ -246,7 +246,7 @@ def example_cost_optimization():
     print("Example 5: Cost Optimization Strategies")
     print("="*60)
 
-    print("\n💡 Cost Optimization Tips:\n")
+    print("\n Cost Optimization Tips:\n")
 
     print("1. Choose the Right Model:")
     print("   - Use Flash models for simple tasks (5x cheaper)")
@@ -317,10 +317,10 @@ def example_cost_optimization():
         savings = tracker_verbose.total_cost - tracker_concise.total_cost
         if savings > 0:
             savings_percent = (savings / tracker_verbose.total_cost) * 100
-            print(f"\n💰 Savings: ${savings:.6f} ({savings_percent:.1f}%)")
+            print(f"\n Savings: ${savings:.6f} ({savings_percent:.1f}%)")
 
     except Exception as e:
-        print(f"\n⚠ Could not run practical example: {e}")
+        print(f"\n Could not run practical example: {e}")
 
 
 def main():
@@ -333,7 +333,7 @@ def main():
 
     # Check for API key
     if not os.getenv("GOOGLE_API_KEY"):
-        print("\n✗ Error: GOOGLE_API_KEY not found in environment variables")
+        print("\n Error: GOOGLE_API_KEY not found in environment variables")
         print("Please create a .env file with your API key:")
         print("  GOOGLE_API_KEY=your_api_key_here")
         return

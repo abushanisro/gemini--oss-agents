@@ -77,9 +77,9 @@
 #### Advanced Features
 - [ ] Context caching (not documented)
 - [ ] Code execution (not documented)
-- [x] Grounding with Google Search (✅ Yes! In quickstart example)
+- [x] Grounding with Google Search ( Yes! In quickstart example)
 - [?] JSON mode (Structured outputs via Pydantic)
-- [x] Token counting (Token usage tracking ✅)
+- [x] Token counting (Token usage tracking )
 - [?] Embeddings (not in LLM docs, may be separate)
 - [?] Fine-tuned model support (needs verification)
 - **Status**: Partially Supported

@@ -43,17 +43,121 @@ This project aims to expand and improve Gemini API integration across popular ag
 - **Estimated Duration**: 175-350 hours
 - **Complexity**: Medium to High
 
-## Getting Started
+## Quick Start
 
-### Prerequisites
-- Python 3.8+
-- Gemini API key
-- Familiarity with target frameworks
-
-### Installation
+### 1. Setup
 ```bash
+# Clone or navigate to the project
+cd gemini-oss-agents
+
+# Run setup script (installs dependencies, creates virtual environment)
+bash setup.sh
+
+# Or manually:
 pip install -r requirements.txt
 ```
+
+### 2. Configure API Key
+```bash
+# Copy example environment file
+cp .env.example .env
+
+# Edit .env and add your Gemini API key
+# GOOGLE_API_KEY=your_api_key_here
+```
+
+### 3. Test Setup
+```bash
+python test_gemini_setup.py
+```
+
+### 4. Run Examples
+```bash
+# Safety settings example
+python examples/01_basic/langchain_with_safety_settings.py
+
+# Error handling example
+python examples/01_basic/langchain_error_handling.py
+
+# Cost tracking example
+python examples/01_basic/langchain_cost_tracking.py
+```
+
+## What's Implemented
+
+### ✅ Production-Ready Utilities
+
+1. **Safety Configuration** (`src/safety_config.py`)
+   - Pre-configured safety presets (permissive, moderate, strict)
+   - Custom safety builders
+   - Framework-specific helpers
+
+2. **Error Handling** (`src/error_handling.py`)
+   - Retry with exponential backoff
+   - Circuit breaker pattern
+   - Safe generation with fallbacks
+   - Safety block detection
+
+3. **Cost Tracking** (`src/cost_tracker.py`)
+   - Token usage monitoring
+   - Cost estimation
+   - Model comparison
+   - Usage analytics and export
+
+### ✅ Working Examples
+
+- **LangChain Safety Settings** - Production safety configurations
+- **LangChain Error Handling** - Robust error patterns
+- **LangChain Cost Tracking** - Cost monitoring and optimization
+
+### 📋 Research Completed
+
+- Comprehensive analysis of 4 major tools (LangChain, LlamaIndex, CrewAI, Composio)
+- Gap analysis identifying 50+ improvement opportunities
+- Implementation strategy with 4 phases
+- Detailed documentation in `research/` directory
+
+## Project Structure
+
+```
+gemini-oss-agents/
+├── src/                          # Production utilities
+│   ├── safety_config.py          # Safety settings management
+│   ├── error_handling.py         # Error handling patterns
+│   └── cost_tracker.py           # Cost tracking and optimization
+├── examples/                     # Working code examples
+│   ├── 01_basic/                # Fundamental patterns
+│   ├── 02_intermediate/         # Advanced workflows (coming soon)
+│   └── 03_advanced/            # Production scenarios (coming soon)
+├── research/                    # Research and analysis
+│   ├── langchain/              # LangChain deep dive
+│   ├── llamaindex/             # LlamaIndex deep dive
+│   ├── crewai/                 # CrewAI deep dive
+│   └── composio/               # Composio deep dive
+├── docs/                       # Documentation (coming soon)
+├── requirements.txt            # Python dependencies
+├── setup.sh                   # Automated setup
+└── test_gemini_setup.py       # API connectivity test
+```
+
+## Key Features
+
+### Safety Settings
+- **Moderate Preset** (recommended): Balanced filtering for most applications
+- **Strict Preset**: Maximum filtering for children's content
+- **Custom Preset**: Fine-grained control per safety category
+
+### Error Handling
+- **Retry Logic**: Exponential backoff for transient failures
+- **Circuit Breakers**: Prevent cascading failures
+- **Fallbacks**: Graceful degradation for better UX
+- **Safety Blocks**: Detect and handle content filtering
+
+### Cost Management
+- **Usage Tracking**: Monitor token consumption
+- **Cost Estimation**: Pre-call cost prediction
+- **Model Comparison**: Compare costs across models
+- **Optimization**: Tips and strategies for cost reduction
 
 ## Contributing
 This project involves contributing to multiple open-source projects. Follow each project's contribution guidelines.

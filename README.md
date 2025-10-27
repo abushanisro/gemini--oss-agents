@@ -117,29 +117,6 @@ python examples/01_basic/langchain_cost_tracking.py
 - Implementation strategy with 4 phases
 - Detailed documentation in `research/` directory
 
-## Project Structure
-
-```
-gemini-oss-agents/
-├── src/                          # Production utilities
-│   ├── safety_config.py          # Safety settings management
-│   ├── error_handling.py         # Error handling patterns
-│   └── cost_tracker.py           # Cost tracking and optimization
-├── examples/                     # Working code examples
-│   ├── 01_basic/                # Fundamental patterns
-│   ├── 02_intermediate/         # Advanced workflows (coming soon)
-│   └── 03_advanced/            # Production scenarios (coming soon)
-├── research/                    # Research and analysis
-│   ├── langchain/              # LangChain deep dive
-│   ├── llamaindex/             # LlamaIndex deep dive
-│   ├── crewai/                 # CrewAI deep dive
-│   └── composio/               # Composio deep dive
-├── docs/                       # Documentation (coming soon)
-├── requirements.txt            # Python dependencies
-├── setup.sh                   # Automated setup
-└── test_gemini_setup.py       # API connectivity test
-```
-
 ## Key Features
 
 ### Safety Settings

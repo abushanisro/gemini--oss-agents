@@ -1,0 +1,35 @@
+# Core Gemini API
+google-generativeai>=0.3.0
+google-ai-generativelanguage>=0.4.0
+
+# Agent/Workflow Frameworks
+langchain>=0.1.0
+langchain-google-genai>=1.0.0
+llamaindex>=0.9.0
+crewai>=0.1.0
+composio-core>=0.1.0
+
+# Additional Tools (to explore)
+semantic-kernel>=0.4.0
+haystack-ai>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+requests>=2.31.0
+aiohttp>=3.9.0
+
+# Development
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+ruff>=0.1.0
+mypy>=1.7.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+
+# Jupyter for examples
+jupyter>=1.0.0
+ipykernel>=6.26.0

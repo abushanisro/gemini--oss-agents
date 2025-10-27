@@ -1,4 +1,5 @@
 # Gemini API OSS Agent Integration Enhancement Project
+![Cost Tracking Diagram](https://github.com/abushanisro/gemini--oss-agents/blob/main/langchain_cost_tracking.png?raw=true)
 
 ## Overview
 This project aims to expand and improve Gemini API integration across popular agent/workflow tools, enabling developers to seamlessly build AI agents and workflows that leverage the capabilities of Gemini models.

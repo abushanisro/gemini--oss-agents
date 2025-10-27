@@ -2,9 +2,6 @@
 """
 LangChain Cost Tracking Example
 
-This example demonstrates how to track token usage and estimate costs
-when using Gemini models with LangChain. Essential for production deployments
-where cost management is critical.
 
 Prerequisites:
 - pip install langchain-google-genai python-dotenv

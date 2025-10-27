@@ -266,8 +266,3 @@ For issues or questions:
 - Check the [troubleshooting guide](../docs/troubleshooting.md)
 - Review [common errors](../docs/common_errors.md)
 - Open an issue on GitHub
-
----
-
-*Examples are production-ready but should be tested in your specific environment.*
-*Always review and adapt to your use case and requirements.*

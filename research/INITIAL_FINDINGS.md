@@ -159,4 +159,3 @@ All major OSS agent/workflow tools now have Gemini integration support, with var
 ---
 
 *Research conducted: October 27, 2025*
-*Analyst: Initial web research phase*

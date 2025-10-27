@@ -46,7 +46,7 @@ def test_gemini_setup():
 
     # Test basic generation
     try:
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash')
         response = model.generate_content("Say hello in one word.")
         print(f"\nTest generation: SUCCESS")
         print(f"Response: {response.text}")
